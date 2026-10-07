@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chain Rinivarts Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-logo">CR</div>
+          <div class="brand-copy">
+            <div class="brand-name">CHAIN RINIVARTS</div>
+            <div class="brand-subtitle">Educational Training Center</div>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <div class="nav-section">
+            <div class="nav-label">Overview</div>
+            <a href="#" class="nav-item active">
+              <span class="nav-icon">◉</span>
+              <span>Dashboard</span>
+            </a>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-label">Student Management</div>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Students</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Enrollments</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Sections</span>
+            </a>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-label">Academic Operations</div>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Schedules</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Sessions</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Attendance</span>
+            </a>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-label">Learning Resources</div>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Materials</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Assessments</span>
+            </a>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-label">Administration</div>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Financials</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Reports</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-icon">◌</span>
+              <span>Administration</span>
+            </a>
+          </div>
+        </nav>
+
+        <div class="sidebar-footer">
+          <span>Quality is our Priority</span>
+          <small>balangcain</small>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="page-title">Dashboard</div>
+          <div class="user-menu">
+            <div class="user-meta">
+              <span class="user-name">Michael John Murrf</span>
+            </div>
+            <button class="user-role">Executive Assistant</button>
+          </div>
+        </header>
+
+        <section class="hero-banner">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-logo">
+              <span>11</span>
+            </div>
+            <div class="hero-copy">
+              <h1>CHAIN RINIVARTS</h1>
+              <p>BEYOND A DECADE</p>
+              <div class="hero-subtitle">11 years of God-led continuing excellence</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-grid" id="statsGrid"></section>
+
+        <section class="content-grid">
+          <div class="panel sessions-panel">
+            <div class="panel-header">
+              <h2>Today's Sessions</h2>
+              <a href="#">View all</a>
+            </div>
+            <div class="session-list" id="sessionList"></div>
+          </div>
+
+          <div class="panel activity-panel">
+            <div class="panel-header">
+              <h2>Recent Activity</h2>
+            </div>
+            <div class="activity-list" id="activityList"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
